@@ -20,5 +20,9 @@ actor DBank {
     } else {
       Debug.print("The amount entered is more than the current value")
     }
-  }
+  };
+
+  public query func checkBalance(): async Nat {
+    return currentValue;
+  };
 }
